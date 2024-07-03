@@ -45,7 +45,13 @@
     .phone-number p:nth-child(1) {
         font-size: 1.2rem;
     }
+
     .whatsapp-link {
+        display: none;
+    }
+
+    .link-mobile {
+        display: block;
         font-size: 1.8rem;
     }
 
@@ -108,7 +114,13 @@
     .phone-number p:nth-child(1) {
         font-size: 1.2rem;
     }
+
     .whatsapp-link {
+        display: none;
+    }
+
+    .link-mobile {
+        display: block;
         font-size: 1.8rem;
     }
 
@@ -245,10 +257,15 @@
     }
 
     .whatsapp-link {
+        display: none;
+    }
+
+    .link-mobile {
+        display: block;
         padding: .2rem;
     }
 
-    .whatsapp-link p > img {
+    .link-mobile p > img {
         width: 24px;
     }
 
