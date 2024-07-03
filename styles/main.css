@@ -1,0 +1,158 @@
+body {
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+}
+
+/*First background content */
+.div-bg {
+    width: 60vw;
+    height: 100vh;
+
+    background: url('../imgs/cake-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom left;
+}
+
+.phone-number {
+    width: 18rem;
+    height: 6rem;
+    border-radius: 0 2rem 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: .8rem;
+
+    background-color: #00000021;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+
+    margin-top: 66%;
+}
+
+.phone-number p:nth-child(1) {
+    font-size: 1.4rem;
+}
+
+.whatsapp-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #972d50;
+
+    width: 100%;
+    height: 100%;
+    padding-top: .4rem;
+    padding-left: .4rem;
+
+    border-radius: 0 2rem 2rem 0;
+    transition: all .4s;
+}
+.whatsapp-link:hover {
+    background-color: #f876aaf1;
+    color: #972d50;
+    border-color: #972d50;
+
+    font-size: 1.6rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/*Second background content */
+.bg-cake {
+    flex-grow: 2;
+    width: 100dvw;
+    height: 100%;
+
+    background: url('../imgs/bg-cake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 70%;
+    margin: 12rem 0;
+
+    padding: 3rem 9.1rem 3rem 2rem;
+    border-radius: 0 2rem 2rem 0;
+    background-color: #3a2018ee;
+    color: #F876AB;
+}
+
+.description h1 {
+    display: flex;
+    align-items: center;
+
+    font-size: 3rem;
+    font-style: oblique;
+}
+
+.description h2 {
+    font-size: 2rem;
+    opacity: .9;
+
+    padding-bottom: 1rem;
+}
+
+.description p {
+    width: 64%;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem 0 0 0;
+}
+
+.description a {
+    text-decoration: none;
+}
+
+.description button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: italic;
+
+    width: 12rem;
+    height: 4rem;
+    margin-top: 2rem;
+
+    background-color: #972d50;
+    color: #fff;
+    border: none;
+    border: 2px solid #000;
+    border-radius: 1rem;
+
+    transition: all .4s;
+}
+.description button:hover {
+    background-color: #f876aaf1;
+    color: #972d50;
+    border-color: #972d50;
+
+    font-size: 1.6rem;
+    transition: all .3s;
+    cursor: pointer;
+}

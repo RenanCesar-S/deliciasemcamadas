@@ -1,0 +1,136 @@
+.header {
+    height: 10rem;
+    display: block;
+
+    background-color: #740036;
+
+    box-shadow: 0 2px 44px rgba(0, 0, 0, 0.281);
+
+    opacity: 0.9;
+}
+
+.nav-content {
+    height: 100%;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-logo {
+    margin-right: 16rem;
+    transition: all .2s;
+}
+.div-logo:hover {
+    translate: 0 -1rem;
+    transition: all .2s;
+}
+
+.nav-logo img {
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.575);
+    width: 7rem;
+}
+
+.nav {
+    width: 34rem;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    color: #fff;
+    background: #ff1a76;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.151);
+}
+
+.nav a {
+    text-decoration: none;
+    color: unset;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.nav a:hover {
+    translate: 0 -1rem;
+    transition: all .2s;
+
+    color: #740036;
+    height: calc(100% + 2rem);
+}
+
+.nav-content .nav-mobile {
+    background: #ff1a768e;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.nav-content .nav-mobile a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 1.25rem 1.875rem;
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    font-size: 16pt;
+}
+
+.nav-content .nav-mobile a:hover {
+    background: #000000af;
+}
+
+#btn-menu {
+    width: 3.5rem;
+    height: 3.9rem;
+    outline: none;
+    background: transparent;
+    border: 2px #fff solid;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btn-menu .line {
+    position: relative;
+    height: 0.188rem;
+    background: #fff;
+    width: 2rem;
+    display: block;
+    margin: 0.313rem auto;
+    transform-origin: center;
+    transition: .2s;
+}
+
+#btn-menu.active {
+    border: 3px #ff0000 solid;
+    box-shadow: 0 0 8px #ff00007e;
+}
+
+#btn-menu.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+    background-color: #ff0000;
+}
+#btn-menu.active .line:nth-child(2) {
+    width: 0;
+}
+#btn-menu.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
+    background-color: #ff0000;
+}
