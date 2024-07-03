@@ -147,6 +147,10 @@
 @media only screen and (max-width: 768px) {
     /* remove old menu and add minimal menu */
 
+    body {
+        overflow: auto;
+    }
+
     .header, .description h2 {
         opacity: 1;
     }
@@ -176,7 +180,11 @@
 
 /* Website */
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+
     .header {
         height: 6rem;
     }
@@ -209,4 +217,81 @@
     .nav-content .nav-mobile {
         top: 6rem;
     }
-} */
+
+    .content {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .div-bg {
+        width: 100vw;
+        height: 40vh;
+        background-size: cover;
+        background-position: bottom;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .phone-number {
+        width: 14rem;
+        height: 4rem;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .phone-number p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .whatsapp-link {
+        padding: .2rem;
+    }
+
+    .whatsapp-link p > img {
+        width: 24px;
+    }
+
+    .bg-cake {
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 60vh;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .description {
+        max-width: 100vw;
+        margin: 0;
+        height: 50%;
+        padding: .5rem .5rem;
+    }
+
+    .description h1 {
+        width: 100%;
+        align-items: start;
+        font-size: 2rem;
+    }
+    .description h2 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .description p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .description button {
+        font-size: 1.2rem;
+        height: 3.5rem;
+        width: 11rem;
+        margin-top: 1rem;
+    }
+
+    .description button:hover {
+        font-size: 1.4rem;
+    }
+}
