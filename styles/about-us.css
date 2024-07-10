@@ -152,8 +152,13 @@ aside {
 }
 
 .section-img img {
-    width: 100%;
+    border-radius: 50%;
+    width: 50%;
     height: auto;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 6px 14px #000000b2;
 }
 
 .section-img p {
